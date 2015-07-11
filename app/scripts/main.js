@@ -1,2 +1,6 @@
 // jshint devel:true
-console.log('\'Allo \'Allo!');
+
+$('body').scrollspy({
+    target: '.bs-docs-sidebar',
+    offset: 40
+});

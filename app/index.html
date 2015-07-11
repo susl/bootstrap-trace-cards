@@ -29,42 +29,176 @@
 
     
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">bootstrap trace cards</h3>
-      </div>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
+    <div class="row">
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+        <div class="col-md-3" role="complementary">
+          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix">
+            <ul id="sidebar" class="nav bs-docs-sidenav">
+              
+<li>
+  <a href="#js-overview">Overview</a>
+  <ul class="nav">
+    <li><a href="#js-data-attrs">Data attributes</a></li>
+    <li><a href="#js-programmatic-api">Programmatic API</a></li>
+  </ul>
+</li>
+<li><a href="#transitions">Transitions</a></li>
+<li>
+  <a href="#modals">Modal</a>
+  <ul class="nav">
+    <li><a href="#modals-examples">Examples</a></li>
+    <li><a href="#modals-sizes">Sizes</a></li>
+  </ul>
+</li>
 
-          <h4><a href="http://libsass.org/">Sass</a></h4>
-          <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
-          
-
-          <h4><a href="http://getbootstrap.com/">Bootstrap</a></h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4><a href="http://modernizr.com/">Modernizr</a></h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-          
+            </ul>
+                      
+          </nav>
         </div>
-      </div>
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+<div class="col-md-9" role="main">
+
+    <div id="js-overview" class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Overview</h3>
       </div>
+      <div class="panel-body">
+
+        <div id="js-data-attrs" class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">Data attributes</h3>
+          </div>
+        </div>
+
+        <div class="alert alert-info" role="alert">Ok here</div>
+
+        <div id="js-programmatic-api" class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">Programmatic API</h3>
+          </div>
+          <div class="panel-body">
+            <div class="bs-callout bs-callout-info">
+              <div class="panel-title">Some message</div>
+            </div>
+            <div class="bs-callout bs-callout-info">
+              <div class="panel-title">Some message</div>
+            </div>
+          </div>
+        </div>
+
+<div class="bs-callout bs-callout-info">
+  <div class="panel-title">Some message</div>
+  <pre id="data-msg-test">{
+  "$id": "1",
+  "AccountIdentifier": "+79260366832",
+  "DestinationCurrencyCode": null,
+  "PaymentRequestId": 79604,
+  "PaymentReference": "e9776e4b-ce95-4515-995f-f48da69d61aa",
+  "SiteName": "triobet.com",
+  "PaymentMethod": {
+    "$id": "2",
+    "Id": 118,
+    "Name": "QIWI",
+    "NoOfAccountLimit": 1,
+    "IsWalletAccountNamedInternally": false
+  },
+  "MethodAction": 1,
+  "IsDeposit": true,
+  "IsWithdrawal": false,
+  "CustomerInformation": {
+    "$id": "3",
+    "UserGuid": "320860be-bff0-4385-b5b7-7b251b033878",
+    "CustomerReference": "320860be-bff0-4385-b5b7-7b251b033878",
+    "LoginName": "yule7@ciklum.com",
+    "AdditionalInfo": null,
+    "FirstName": "yu",
+    "LastName": "le",
+    "BirthDate": "1982-04-16T00:00:00",
+    "Address": "sdfgsdg",
+    "ZipCode": "345234",
+    "City": "xfgsd",
+    "CountryCode": "UA",
+    "LanguageCode": "en",
+    "PhoneNumber": "+380 939086125",
+    "Email": "yule7@ciklum.com",
+    "AccountCurrency": "EUR",
+    "DepositLimits": [],
+    "DepositAllowed": true,
+    "WithdrawalAllowed": true,
+    "Created": "2015-06-18T16:01:14.7835086Z",
+    "CustomerSegments": [],
+    "VipType": "Unknown"
+  },
+  "LoginInformation": {
+    "$id": "4",
+    "IpAddress": "192.168.205.28",
+    "IsMobile": false
+  },
+  "PaymentBill": {
+    "$id": "5",
+    "Amount": 1,
+    "Fee": 0,
+    "Currency": "RUB"
+  },
+  "BaseBill": {
+    "$id": "6",
+    "Amount": 0.01,
+    "Fee": 0,
+    "Currency": "EUR"
+  },
+  "UserBill": {
+    "$id": "7",
+    "Amount": 0.01,
+    "Fee": 0,
+    "Currency": "EUR"
+  },
+  "FeeRequestedFromWeb": null
+}</code>
+</div>
+
+      </div>
+    </div>
+
+    <div id="transitions" class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Transitions</h3>
+      </div>
+    </div>
+
+    <div id="modals" class="panel panel-warning">
+      <div class="panel-heading">
+        <h3 class="panel-title">Modals</h3>
+      </div>
+      <div class="panel-body">
+
+        <div id="modals-examples" class="panel panel-warning">
+          <div class="panel-heading">
+            <h3 class="panel-title">Examples</h3>
+          </div>
+        </div>
+
+        <div class="alert alert-info" role="alert">Ok here</div>
+
+        <div id="modals-sizes" class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">Sizes</h3>
+          </div>
+          <div class="panel-body">
+
+            <div class="alert alert-info" role="alert">Ok here</div>
+            <div class="alert alert-info" role="alert">Ok here</div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+</div>
+
+    </div>
+
     </div>
     
 
