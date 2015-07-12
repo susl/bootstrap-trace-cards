@@ -84,7 +84,6 @@ body {
 }
 
 $callout-default-color: #777;
-$callout-primary-color: #428bca;
 $callout-success-color: #5cb85c;
 $callout-danger-color: #d9534f;
 $callout-warning-color: #f0ad4e;
@@ -99,9 +98,6 @@ $callout-info-color: #5bc0de;
 }
 .bs-callout-default {
     border-left-color: $callout-default-color;
-}
-.bs-callout-primary {
-    border-left-color: $callout-primary-color;
 }
 .bs-callout-success {
     border-left-color: $callout-success-color;
@@ -127,9 +123,13 @@ $callout-info-color: #5bc0de;
     margin-top: 7px;
 }
 
+.bs-callout>.panel-title {
+    color: $callout-default-color;
+}
+
 .bs-callout.bs-callout-info>.panel-title {
-    color: $callout-info-color;
     :before {
+        color: $callout-info-color;
         @include fa-icon();
         content: $fa-var-info;
         margin-right: 5px;
@@ -137,9 +137,9 @@ $callout-info-color: #5bc0de;
 }
 
 .bs-callout.bs-callout-warning>.panel-title {
-    color: $callout-warning-color;
     font-weight: bold;
     :before {
+        color: $callout-warning-color;
         @include fa-icon();
         content: $fa-var-flag;
         margin-right: 4px;
@@ -147,9 +147,9 @@ $callout-info-color: #5bc0de;
 }
 
 .bs-callout.bs-callout-danger>.panel-title {
-    color: $callout-danger-color;
     font-weight: bold;
     :before {
+        color: $callout-danger-color;
         @include fa-icon();
         content: $fa-var-exclamation;
         margin-right: 5px;
@@ -157,8 +157,8 @@ $callout-info-color: #5bc0de;
 }
 
 .bs-callout.bs-callout-success>.panel-title {
-    color: $callout-success-color;
     :before {
+        color: $callout-success-color;
         @include fa-icon();
         content: $fa-var-check;
         margin-right: 3px;
