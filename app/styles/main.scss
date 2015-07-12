@@ -83,6 +83,12 @@ body {
     display: block;           
 }
 
+$callout-default-color: #777;
+$callout-primary-color: #428bca;
+$callout-success-color: #5cb85c;
+$callout-danger-color: #d9534f;
+$callout-warning-color: #f0ad4e;
+$callout-info-color: #5bc0de;
 
 .bs-callout {
     padding: 7px 10px 7px 10px;
@@ -91,39 +97,72 @@ body {
     border-left-width: 5px;
     border-radius: 3px;
 }
+.bs-callout-default {
+    border-left-color: $callout-default-color;
+}
+.bs-callout-primary {
+    border-left-color: $callout-primary-color;
+}
+.bs-callout-success {
+    border-left-color: $callout-success-color;
+}
+.bs-callout-danger {
+    border-left-color: $callout-danger-color;
+}
+.bs-callout-warning {
+    border-left-color: $callout-warning-color;
+}
+.bs-callout-info {
+    border-left-color: $callout-info-color;
+}
+
 .bs-callout p:last-child {
     margin-bottom: 0px;
 }
 .bs-callout+.bs-callout {
     margin-top: -5px;
 }
-.bs-callout-default {
-    border-left-color: #777;
-}
-.bs-callout-primary {
-    border-left-color: #428bca;
-}
-.bs-callout-success {
-    border-left-color: #5cb85c;
-}
-.bs-callout-danger {
-    border-left-color: #d9534f;
-}
-.bs-callout-warning {
-    border-left-color: #f0ad4e;
-}
-.bs-callout-info {
-    border-left-color: #5bc0de;
-}
-
-
-.bs-callout pre {
-    margin-bottom: 0px;
-    margin-top: 5px;
-}
 
 .panel-title+.bs-callout {
     margin-top: 5px;
+}
+
+.bs-callout.bs-callout-info>.panel-title {
+    color: $callout-info-color;
+    :before {
+        @include fa-icon();
+        content: $fa-var-info;
+        margin-right: 5px;
+    }
+}
+
+.bs-callout.bs-callout-warning>.panel-title {
+    color: $callout-warning-color;
+    font-weight: bold;
+    :before {
+        @include fa-icon();
+        content: $fa-var-flag;
+        margin-right: 4px;
+    }
+}
+
+.bs-callout.bs-callout-danger>.panel-title {
+    color: $callout-danger-color;
+    font-weight: bold;
+    :before {
+        @include fa-icon();
+        content: $fa-var-exclamation;
+        margin-right: 5px;
+    }
+}
+
+.bs-callout.bs-callout-success>.panel-title {
+    color: $callout-success-color;
+    :before {
+        @include fa-icon();
+        content: $fa-var-check;
+        margin-right: 3px;
+    }
 }
 
 .panel {
