@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "jquery.json-view": "*"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -17,5 +18,17 @@
   "devDependencies": {
     "chai": "~3.0.0",
     "mocha": "~2.2.5"
-  }
+  },
+  "version": "0.0.0",
+  "homepage": "https://github.com/susl/bootstrap-trace-cards",
+  "authors": [
+    "Dmytro Suvorov <suslamo@gmail.com>"
+  ],
+  "description": "A view for Payment Request Validation Tracing for Betsson CP",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests"
+  ]
 }
