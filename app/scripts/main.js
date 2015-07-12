@@ -5,7 +5,17 @@ $('body').scrollspy({
     offset: 40
 });
 
-$('#msg-test-data').jsonView({
+function renderData(id, json) {
+    if (typeof json === 'string') { json = JSON.parse(json); }
+    var el = $(id);
+    switch(json.type) {
+        default:
+            el.jsonView(json);
+            break;
+    }
+}
+
+renderData('#msg-test-data', {
   "$id": "1",
   "AccountIdentifier": "+79260366832",
   "DestinationCurrencyCode": null,
@@ -70,4 +80,11 @@ $('#msg-test-data').jsonView({
     "Currency": "EUR"
   },
   "FeeRequestedFromWeb": null
+})
+
+renderData('#customer-data', {
+   "$id":"1",
+   "Id":7635,
+   "CustomerReference":"320860be-bff0-4385-b5b7-7b251b033878",
+   "LoginName":"yule7@ciklum.com"
 })

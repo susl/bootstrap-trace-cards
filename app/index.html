@@ -13,6 +13,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/jquery.json-view/dist/jquery.json-view.css">
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -60,32 +61,131 @@
 
 <div class="col-md-9" role="main">
 
+    <div class="bs-callout bs-callout-warning"><div class="panel-title">Some warning message here</div></div>
+
     <div id="js-overview" class="panel panel-success">
       <div class="panel-heading">
-        <h3 class="panel-title">Overview</h3>
+        <h3 class="panel-title">Payment Request Validation</h3>
       </div>
       <div class="panel-body">
 
         <div id="js-data-attrs" class="panel panel-success">
           <div class="panel-heading">
-            <h3 class="panel-title">Data attributes</h3>
+            <h3 class="panel-title">MethodActionAllowedPolicy</h3>
           </div>
         </div>
 
-        <div class="bs-callout bs-callout-info"><div class="panel-title">Ok here</div></div>
+        <div id="js-data-attrs" class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">PaymentFeeMismatchPolicy</h3>
+          </div>
+        </div>
+        <div id="js-data-attrs" class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">PaymentMethodLimitPolicy</h3>
+          </div>
+        </div>
+        <div id="js-data-attrs" class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">AvailableBalancePolicy</h3>
+          </div>
+        </div>
+
+        <div class="bs-callout bs-callout-success"><div class="panel-title">Some success message here</div></div>
 
         <div id="js-programmatic-api" class="panel panel-success">
           <div class="panel-heading">
-            <h3 class="panel-title">Programmatic API</h3>
+            <h3 class="panel-title">GetOrCreateCustomer</h3>
           </div>
           <div class="panel-body">
             <div class="bs-callout bs-callout-info">
-              <div class="panel-title">Some message</div>
-            </div>
-            <div class="bs-callout bs-callout-info">
-              <div class="panel-title">Some message</div>
+              <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
+              <div class="collapse" id="customer-data"></div>
             </div>
           </div>
+        </div>
+
+        <div class="bs-callout bs-callout-success">
+            <div class="panel-title">GetOrCreateCustomer</div>
+            <div class="bs-callout bs-callout-info">
+              <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
+              <div class="collapse" id="customer-data"></div>
+            </div>
+        </div>
+
+        <div class="bs-callout bs-callout-success">
+            <div class="panel-title"><span style="color: #3c763d;">GetOrCreateCustomer</span></div>
+            <div class="bs-callout bs-callout-info">
+              <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
+              <div class="collapse" id="customer-data"></div>
+            </div>
+        </div>
+
+        <div class="bs-callout bs-callout-success">
+            <div class="panel-title strong">GetOrCreateCustomer</div>
+            <div class="bs-callout bs-callout-info">
+              <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
+              <div class="collapse" id="customer-data"></div>
+            </div>
+        </div>
+
+        <div class="bs-callout bs-callout-success">
+            <div class="panel-title"><span class="label label-success">GetOrCreateCustomer</span></div>
+            <div class="bs-callout bs-callout-info">
+              <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
+              <div class="collapse" id="customer-data"></div>
+            </div>
+        </div>
+
+        <div class="bs-callout bs-callout-success">
+            <div class="panel-title"><span class="label label-success"><i class="fa fa-check"></i></span><span style="margin-left: 3px;">GetOrCreateCustomer</span></div>
+            <div class="bs-callout bs-callout-info">
+              <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
+              <div class="collapse" id="customer-data"></div>
+            </div>
+        </div>
+
+        <div class="bs-callout bs-callout-success">
+            <div class="panel-title"><i class="fa fa-check" style="color: #5cb85c;"></i><span style="margin-left: 3px;">GetOrCreateCustomer</span></div>
+            <div class="bs-callout bs-callout-info">
+              <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
+              <div class="collapse" id="customer-data"></div>
+            </div>
+        </div>
+
+        <div class="bs-callout bs-callout-success">
+            <div class="panel-title"><i class="fa fa-check" style="color: #5cb85c;"></i><span class="" style="margin-left: 3px; color: #3c763d;">GetOrCreateCustomer</span></div>
+            <div class="bs-callout bs-callout-info">
+              <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
+              <div class="collapse" id="customer-data"></div>
+            </div>
+        </div>
+
+        <div class="bs-callout bs-callout-warning">
+            <div class="panel-title"><i class="fa fa-flag" style="color: #f0ad4e;"></i><span class="strong" style="margin-left: 3px; color: #f0ad4e;">GetOrCreateCustomer</span></div>
+            <div class="bs-callout bs-callout-info">
+              <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
+              <div class="collapse" id="customer-data"></div>
+            </div>
+        </div>
+
+        <div class="bs-callout bs-callout-success">
+            <div class="panel-title">GetOrCreateCustomer</div>
+
+                <div class="bs-callout bs-callout-success">
+                    <div class="panel-title">GetOrCreateCustomer</div>
+                    <div class="bs-callout bs-callout-info">
+                      <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
+                      <div class="collapse" id="customer-data"></div>
+                    </div>
+                </div>
+                <div class="bs-callout bs-callout-danger">
+                    <div class="panel-title"><i class="fa fa-exclamation" style="color: #d9534f;"></i><span class="strong" style="margin-left: 3px; color: #d9534f;">GetOrCreateCustomer</span></div>
+                    <div class="bs-callout bs-callout-info">
+                      <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
+                      <div class="collapse" id="customer-data"></div>
+                    </div>
+                </div>
         </div>
 
       </div>
@@ -114,6 +214,9 @@
         <div id="modals-examples" class="panel panel-warning">
           <div class="panel-heading">
             <h3 class="panel-title">Examples</h3>
+          </div>
+          <div class="panel-body">
+            <div class="bs-callout bs-callout-danger"><div class="panel-title">Some error message here</div></div>
           </div>
         </div>
 

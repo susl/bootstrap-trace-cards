@@ -2,6 +2,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/components-font-awesome/scss/font-awesome.scss";
 // endbower
 
 .browsehappy {
@@ -121,6 +122,9 @@ body {
     margin-top: 5px;
 }
 
+.panel-title+.bs-callout {
+    margin-top: 5px;
+}
 
 .panel {
     margin-bottom: 12px;
@@ -130,13 +134,15 @@ body {
   padding: 10px 10px 10px 10px;
 }
 
-
 .bs-callout .panel-title a:after {
-    font-family:'Glyphicons Halflings';
-    content:"\e114";
+    @include fa-icon();
     float: right;
-    color: grey;
+    content: $fa-var-caret-down;
 }
 .bs-callout .panel-title a.collapsed:after {
-    content:"\e080";
+    content: $fa-var-caret-right;
+}
+
+.strong {
+  font-weight: bold;
 }
