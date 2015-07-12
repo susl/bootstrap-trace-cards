@@ -20,7 +20,12 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
     <!-- endbuild -->
     
   </head>
@@ -32,174 +37,127 @@
     
     <div class="container">
 
-    <div class="row">
 
-        <div class="col-md-3" role="complementary">
-          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix">
+
+
+
+
+
+
+<div class="row">
+    <div class="col-md-3" role="complementary">
+        <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix">
             <ul id="sidebar" class="nav bs-docs-sidenav">
-              
-<li>
-  <a href="#js-overview">Overview</a>
-  <ul class="nav">
-    <li><a href="#js-data-attrs">Data attributes</a></li>
-    <li><a href="#js-programmatic-api">Programmatic API</a></li>
-  </ul>
-</li>
-<li><a href="#transitions">Transitions</a></li>
-<li>
-  <a href="#modals">Modal</a>
-  <ul class="nav">
-    <li><a href="#modals-examples">Examples</a></li>
-    <li><a href="#modals-sizes">Sizes</a></li>
-  </ul>
-</li>
+                        <li>
+            <a href="#6101cf5c-8579-4aca-8e1b-c9615846552f">Payment Request Validation</a>
+                    <ul class="nav">
+                                <li>
+            <a href="#44b69e06-91c6-40ec-942e-cf2f6a049249">MethodActionAllowedPolicy</a>
+
+        </li>
+        <li>
+            <a href="#28aa4af2-2873-4d95-9122-632479b19c54">PaymentFeeMismatchPolicy</a>
+
+        </li>
+        <li>
+            <a href="#75bb8ff9-f724-47ff-aec3-f31c0dd529f9">PaymentMethodLimitPolicy</a>
+
+        </li>
+        <li>
+            <a href="#67469d15-cbd0-45e5-8995-a0e478e431db">AvailableBalancePolicy</a>
+
+        </li>
+        <li>
+            <a href="#bb5787fb-6cfb-4e0a-b1d8-45090987c6dd">GetOrCreateCustomer</a>
+                    <ul class="nav">
+                        
+                    </ul>
+
+        </li>
+        <li>
+            <a href="#d594c62f-4ada-4ef4-90e3-7e470524bf34">Customer Validation</a>
+                    <ul class="nav">
+                                <li>
+            <a href="#d82dc976-0f1e-41b4-82a3-799d732bdccd">PaymentOptionGroupRequiredPolicy</a>
+                    <ul class="nav">
+                        
+                    </ul>
+
+        </li>
+
+                    </ul>
+
+        </li>
+
+                    </ul>
+
+        </li>
 
             </ul>
-                      
-          </nav>
-        </div>
-
-<div class="col-md-9" role="main">
-
-    <div class="bs-callout bs-callout-warning"><div class="panel-title">Some warning message here</div></div>
-
-    <div id="js-overview" class="panel panel-success">
-      <div class="panel-heading">
-        <h3 class="panel-title">Payment Request Validation</h3>
-      </div>
-      <div class="panel-body">
-
-        <div id="js-data-attrs" class="panel panel-success">
-          <div class="panel-heading">
-            <h3 class="panel-title">MethodActionAllowedPolicy</h3>
-          </div>
-        </div>
-
-        <div id="js-data-attrs" class="panel panel-success">
-          <div class="panel-heading">
-            <h3 class="panel-title">PaymentFeeMismatchPolicy</h3>
-          </div>
-        </div>
-        <div id="js-data-attrs" class="panel panel-success">
-          <div class="panel-heading">
-            <h3 class="panel-title">PaymentMethodLimitPolicy</h3>
-          </div>
-        </div>
-        <div id="js-data-attrs" class="panel panel-success">
-          <div class="panel-heading">
-            <h3 class="panel-title">AvailableBalancePolicy</h3>
-          </div>
-        </div>
-
-        <div class="bs-callout bs-callout-success"><div class="panel-title">Some success message here</div></div>
-
-        <div id="js-programmatic-api" class="panel panel-success">
-          <div class="panel-heading">
-            <h3 class="panel-title">GetOrCreateCustomer</h3>
-          </div>
-          <div class="panel-body">
-            <div class="bs-callout bs-callout-info">
-              <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
-              <div class="collapse" id="customer-data"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bs-callout bs-callout-success">
-            <div class="panel-title"><span>GetOrCreateCustomer</span></div>
-            <div class="bs-callout bs-callout-info">
-              <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
-              <div class="collapse" id="customer-data"></div>
-            </div>
-        </div>
-
-        <div class="bs-callout bs-callout-warning">
-            <div class="panel-title"><span>GetOrCreateCustomer</span></div>
-            <div class="bs-callout bs-callout-info">
-              <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
-              <div class="collapse" id="customer-data"></div>
-            </div>
-        </div>
-
-        <div class="bs-callout bs-callout-success">
-            <div class="panel-title"><span>GetOrCreateCustomer</span></div>
-
-                <div class="bs-callout bs-callout-success">
-                    <div class="panel-title"><span>GetOrCreateCustomer</span></div>
-                    <div class="bs-callout bs-callout-info">
-                      <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
-                      <div class="collapse" id="customer-data"></div>
-                    </div>
-                </div>
-                <div class="bs-callout bs-callout-danger">
-                    <div class="panel-title"><span>GetOrCreateCustomer</span></div>
-                    <div class="bs-callout bs-callout-info">
-                      <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#customer-data" href="#customer-data">Registered Customer</a></div>
-                      <div class="collapse" id="customer-data"></div>
-                    </div>
-                </div>
-        </div>
-
-      </div>
+        </nav>
     </div>
-
-    <div id="transitions" class="panel panel-success">
-      <div class="panel-heading">
-        <h3 class="panel-title">Transitions</h3>
-      </div>
-      <div class="panel-body">
-
+    <div class="col-md-9" role="main">
+<div class="bs-callout bs-callout-warning">
+    <div class="panel-title"><span>Payment Request Validation</span></div>
+<div class="bs-callout bs-callout-success">
+    <div class="panel-title"><span>MethodActionAllowedPolicy</span></div>
+</div>
+<div class="bs-callout bs-callout-success">
+    <div class="panel-title"><span>PaymentFeeMismatchPolicy</span></div>
+</div>
+<div class="bs-callout bs-callout-success">
+    <div class="panel-title"><span>PaymentMethodLimitPolicy</span></div>
+</div>
+<div class="bs-callout bs-callout-success">
+    <div class="panel-title"><span>AvailableBalancePolicy</span></div>
+</div>
+<div class="bs-callout bs-callout-success">
+    <div class="panel-title"><span>GetOrCreateCustomer</span></div>
 <div class="bs-callout bs-callout-info">
-  <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#msg-test-data" href="#msg-test-data">Some message</a></div>
-  <div class="collapse" id="msg-test-data"></div>
+        <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#bc8dcfe9-8cd5-47c3-a973-b14d7a71aa99-data" href="#bc8dcfe9-8cd5-47c3-a973-b14d7a71aa99-data">Registered Customer</a></div>
+        <div class="collapse" id="bc8dcfe9-8cd5-47c3-a973-b14d7a71aa99-data"></div>
+        <script>
+            $(function() { renderData('#bc8dcfe9-8cd5-47c3-a973-b14d7a71aa99-data', {"$id":"1","Id":139,"CustomerReference":"0","LoginName":"fake.test.user@systemtests.com"}); });
+        </script>
+</div>
+</div>
+<div class="bs-callout bs-callout-warning">
+    <div class="panel-title"><span>Customer Validation</span></div>
+<div class="bs-callout bs-callout-warning">
+    <div class="panel-title"><span>PaymentOptionGroupRequiredPolicy</span></div>
+<div class="bs-callout bs-callout-warning">
+        <div class="panel-title"><span>PaymentMethod QIWI and MethodAction Deposit are not included in any POG for customer fake.test.user@systemtests.com</span></div>
+</div>
+<div class="bs-callout bs-callout-warning">
+        <div class="panel-title"><a class="collapsed" data-toggle="collapse" data-target="#7c15bf8e-bad2-40e1-9320-5cbd6a834be1-data" href="#7c15bf8e-bad2-40e1-9320-5cbd6a834be1-data">PaymentOptionGroupRequiredPolicy check failed with ResponseCode=25009!</a></div>
+        <div class="collapse" id="7c15bf8e-bad2-40e1-9320-5cbd6a834be1-data"></div>
+        <script>
+            $(function() { renderData('#7c15bf8e-bad2-40e1-9320-5cbd6a834be1-data', {"$id":"1","ErrorCode":25009,"CustomErrorMessage":null}); });
+        </script>
+</div>
+</div>
+</div>
+<div class="bs-callout bs-callout-warning">
+        <div class="panel-title"><span>Flow termination with ResponseCode 25009</span></div>
+</div>
+</div>
+    </div>
 </div>
 
-      </div>
-    </div>
 
-    <div id="modals" class="panel panel-warning">
-      <div class="panel-heading">
-        <h3 class="panel-title">Modals</h3>
-      </div>
-      <div class="panel-body">
 
-        <div id="modals-examples" class="panel panel-warning">
-          <div class="panel-heading">
-            <h3 class="panel-title">Examples</h3>
-          </div>
-          <div class="panel-body">
-            <div class="bs-callout bs-callout-danger"><div class="panel-title">Some error message here</div></div>
-          </div>
-        </div>
 
-        <div class="bs-callout bs-callout-info"><div class="panel-title">Ok here</div></div>
 
-        <div id="modals-sizes" class="panel panel-success">
-          <div class="panel-heading">
-            <h3 class="panel-title">Sizes</h3>
-          </div>
-          <div class="panel-body">
 
-            <div class="bs-callout bs-callout-info"><div class="panel-title">Ok here</div></div>
-            <div class="bs-callout bs-callout-info"><div class="panel-title">Ok here</div></div>
 
-          </div>
-        </div>
 
-      </div>
-    </div>
 
-</div>
-
-    </div>
 
     </div>
     
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/jquery.json-view/dist/jquery.json-view.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
