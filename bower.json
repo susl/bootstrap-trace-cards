@@ -4,7 +4,7 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.3",
-    "jquery.json-view": "*",
+    "jquery.json-view": "https://github.com/susl/jquery.json-view.git",
     "components-font-awesome": "~4.3.0"
   },
   "overrides": {
