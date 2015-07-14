@@ -24,6 +24,8 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+  grunt.loadNpmTasks('grunt-gh-pages');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -353,7 +355,7 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           dot: true,
-          cwd: 'bower_components/font-awesome',
+          cwd: 'bower_components/components-font-awesome',
           src: 'fonts/*',
           dest: '<%= config.dist %>'
         }]
@@ -392,6 +394,13 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
     }
   });
 
