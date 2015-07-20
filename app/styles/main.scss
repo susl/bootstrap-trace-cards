@@ -18,14 +18,8 @@ body {
   padding-bottom: 20px;
 }
 
-.callout-body div:last-child {
-    margin-bottom: 0;
-}
-
-
 
 // custom styles below
-
 
 /* sidebar */
 .bs-docs-sidebar {
@@ -120,8 +114,11 @@ $callout-info-color: #5bc0de;
     margin-top: -5px;
 }
 
-.callout-title+.callout-body {
+.callout-title+.callout-body.callout-scope {
     margin-top: 7px;
+}
+.callout-body div:last-child {
+    margin-bottom: 0;
 }
 
 .bs-callout>.callout-title {
@@ -166,11 +163,14 @@ $callout-info-color: #5bc0de;
     }
 }
 
-.bs-callout .callout-title a:after {
-    @include fa-icon();
-    float: right;
-    content: $fa-var-caret-down;
-}
-.bs-callout .callout-title a.collapsed:after {
-    content: $fa-var-caret-right;
+.bs-callout>.callout-title>a {
+    display: block;
+    &:after {
+        @include fa-icon();
+        float: right;
+        content: $fa-var-caret-down;
+    }
+    &.collapsed:after {
+        content: $fa-var-caret-right;
+    }
 }
