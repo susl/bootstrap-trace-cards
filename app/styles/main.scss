@@ -48,22 +48,22 @@ body {
 }
 
 /* active & hover links */
-.sidebar .nav>.active>a, 
-.sidebar .nav>li>a:hover, 
+.sidebar .nav>.active>a,
+.sidebar .nav>li>a:hover,
 .sidebar .nav>li>a:focus {
-    color: #563d7c;                 
-    text-decoration: none;          
-    background-color: transparent;  
-    border-left-color: #563d7c; 
+    color: #563d7c;
+    text-decoration: none;
+    background-color: transparent;
+    border-left-color: #563d7c;
 }
 /* all active links */
-.sidebar .nav>.active>a, 
+.sidebar .nav>.active>a,
 .sidebar .nav>.active:hover>a,
 .sidebar .nav>.active:focus>a {
     font-weight: 700;
 }
 /* nested active links */
-.sidebar .nav .nav>.active>a, 
+.sidebar .nav .nav>.active>a,
 .sidebar .nav .nav>.active:hover>a,
 .sidebar .nav .nav>.active:focus>a {
     font-weight: 500;
@@ -75,7 +75,7 @@ body {
 }
 /* show active nested list */
 .sidebar .nav>.active>ul.nav {
-    display: block;           
+    display: block;
 }
 
 
@@ -89,11 +89,12 @@ $callout-warning-color: #f0ad4e;
 $callout-info-color: #5bc0de;
 
 .callout {
-    padding: 7px 10px 7px 10px;
+    padding: 7px 7px 7px 10px;
     margin-bottom: 7px;
     border: 1px solid #eee;
     border-left-width: 3px;
     border-radius: 3px;
+    box-shadow: 1px 1px 3px #eee;
 }
 .callout-default {
     border-left-color: $callout-default-color;
@@ -173,6 +174,7 @@ $callout-info-color: #5bc0de;
         @include fa-icon();
         float: right;
         content: $fa-var-caret-down;
+        line-height: inherit;
     }
     &.collapsed:after {
         content: $fa-var-caret-right;
