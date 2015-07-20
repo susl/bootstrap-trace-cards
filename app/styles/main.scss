@@ -18,7 +18,7 @@ body {
   padding-bottom: 20px;
 }
 
-.panel-body div:last-child {
+.callout-body div:last-child {
     margin-bottom: 0;
 }
 
@@ -93,8 +93,9 @@ $callout-info-color: #5bc0de;
     padding: 7px 10px 7px 10px;
     margin-bottom: 7px;
     border: 1px solid #eee;
-    border-left-width: 5px;
+    border-left-width: 3px;
     border-radius: 3px;
+//    box-shadow: 1px 1px 2px #aaa;
 }
 .bs-callout-default {
     border-left-color: $callout-default-color;
@@ -119,15 +120,15 @@ $callout-info-color: #5bc0de;
     margin-top: -5px;
 }
 
-.panel-title+.bs-callout {
+.callout-title+.callout-body {
     margin-top: 7px;
 }
 
-.bs-callout>.panel-title {
+.bs-callout>.callout-title {
     color: $callout-default-color;
 }
 
-.bs-callout.bs-callout-info>.panel-title {
+.bs-callout.bs-callout-info>.callout-title {
     :before {
         color: $callout-info-color;
         @include fa-icon();
@@ -136,7 +137,7 @@ $callout-info-color: #5bc0de;
     }
 }
 
-.bs-callout.bs-callout-warning>.panel-title {
+.bs-callout.bs-callout-warning>.callout-title {
     font-weight: bold;
     :before {
         color: $callout-warning-color;
@@ -146,7 +147,7 @@ $callout-info-color: #5bc0de;
     }
 }
 
-.bs-callout.bs-callout-danger>.panel-title {
+.bs-callout.bs-callout-danger>.callout-title {
     font-weight: bold;
     :before {
         color: $callout-danger-color;
@@ -156,7 +157,7 @@ $callout-info-color: #5bc0de;
     }
 }
 
-.bs-callout.bs-callout-success>.panel-title {
+.bs-callout.bs-callout-success>.callout-title {
     :before {
         color: $callout-success-color;
         @include fa-icon();
@@ -165,23 +166,11 @@ $callout-info-color: #5bc0de;
     }
 }
 
-.panel {
-    margin-bottom: 12px;
-}
-
-.panel-body {
-  padding: 10px 10px 10px 10px;
-}
-
-.bs-callout .panel-title a:after {
+.bs-callout .callout-title a:after {
     @include fa-icon();
     float: right;
     content: $fa-var-caret-down;
 }
-.bs-callout .panel-title a.collapsed:after {
+.bs-callout .callout-title a.collapsed:after {
     content: $fa-var-caret-right;
-}
-
-.strong {
-  font-weight: bold;
 }
