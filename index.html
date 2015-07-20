@@ -1,6 +1,275 @@
-<!DOCTYPE html> <html class=no-js> <head> <meta charset=utf-8> <title>bootstrap trace cards</title> <meta name=description content=""> <meta name=viewport content="width=device-width,initial-scale=1"> <link rel="shortcut icon" href=/favicon.b25e58c4.ico> <link rel=apple-touch-icon href=/apple-touch-icon.9727d3c2.png> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel=stylesheet href=styles/vendor.49d53e0e.css> <link rel=stylesheet href=styles/main.fa25c9ff.css> <script src=scripts/vendor/modernizr.fbe20327.js></script> <script src=scripts/vendor.f8f0373c.js></script>  <body> <!--[if lt IE 10]>
+<!DOCTYPE html> <html class=no-js> <head> <meta charset=utf-8> <title>bootstrap trace cards</title> <meta name=description content=""> <meta name=viewport content="width=device-width,initial-scale=1"> <link rel="shortcut icon" href=/favicon.b25e58c4.ico> <link rel=apple-touch-icon href=/apple-touch-icon.9727d3c2.png> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel=stylesheet href=styles/vendor.49d53e0e.css> <link rel=stylesheet href=styles/main.cb9f08bc.css> <script src=scripts/vendor/modernizr.fbe20327.js></script> <script src=scripts/vendor.f8f0373c.js></script>  <body> <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> <div class=container> <div class=row> <div class=col-md-3 role=complementary> <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix"> <ul id=sidebar class="nav bs-docs-sidenav"> <li> <a href=#6101cf5c-8579-4aca-8e1b-c9615846552f>Payment Request Validation</a> <ul class=nav> <li> <a href=#44b69e06-91c6-40ec-942e-cf2f6a049249>MethodActionAllowedPolicy</a> </li> <li> <a href=#28aa4af2-2873-4d95-9122-632479b19c54>PaymentFeeMismatchPolicy</a> </li> <li> <a href=#75bb8ff9-f724-47ff-aec3-f31c0dd529f9>PaymentMethodLimitPolicy</a> </li> <li> <a href=#67469d15-cbd0-45e5-8995-a0e478e431db>AvailableBalancePolicy</a> </li> <li> <a href=#bb5787fb-6cfb-4e0a-b1d8-45090987c6dd>GetOrCreateCustomer</a> <ul class=nav> </ul> </li> <li> <a href=#d594c62f-4ada-4ef4-90e3-7e470524bf34>Customer Validation</a> <ul class=nav> <li> <a href=#d82dc976-0f1e-41b4-82a3-799d732bdccd>PaymentOptionGroupRequiredPolicy</a> <ul class=nav> </ul> </li> </ul> </li> </ul> </li> </ul> </nav> </div> <div class=col-md-9 role=main> <div class="bs-callout bs-callout-warning"> <div class=panel-title><span>Payment Request Validation</span></div> <div class="bs-callout bs-callout-success"> <div class=panel-title><span>MethodActionAllowedPolicy</span></div> </div> <div class="bs-callout bs-callout-success"> <div class=panel-title><span>PaymentFeeMismatchPolicy</span></div> </div> <div class="bs-callout bs-callout-success"> <div class=panel-title><span>PaymentMethodLimitPolicy</span></div> </div> <div class="bs-callout bs-callout-success"> <div class=panel-title><span>AvailableBalancePolicy</span></div> </div> <div class="bs-callout bs-callout-success"> <div class=panel-title><span>GetOrCreateCustomer</span></div> <div class="bs-callout bs-callout-info"> <div class=panel-title><a class=collapsed data-toggle=collapse data-target=#bc8dcfe9-8cd5-47c3-a973-b14d7a71aa99-data href=#bc8dcfe9-8cd5-47c3-a973-b14d7a71aa99-data>Registered Customer</a></div> <div class=collapse id=bc8dcfe9-8cd5-47c3-a973-b14d7a71aa99-data></div> <script>$(function() { renderData('#bc8dcfe9-8cd5-47c3-a973-b14d7a71aa99-data', {"$id":"1","Id":139,"CustomerReference":"0","LoginName":"fake.test.user@systemtests.com"}); });</script> </div> </div> <div class="bs-callout bs-callout-warning"> <div class=panel-title><span>Customer Validation</span></div> <div class="bs-callout bs-callout-warning"> <div class=panel-title><span>PaymentOptionGroupRequiredPolicy</span></div> <div class="bs-callout bs-callout-warning"> <div class=panel-title><span>PaymentMethod QIWI and MethodAction Deposit are not included in any POG for customer fake.test.user@systemtests.com</span></div> </div> <div class="bs-callout bs-callout-warning"> <div class=panel-title><a class=collapsed data-toggle=collapse data-target=#7c15bf8e-bad2-40e1-9320-5cbd6a834be1-data href=#7c15bf8e-bad2-40e1-9320-5cbd6a834be1-data>PaymentOptionGroupRequiredPolicy check failed with ResponseCode=25009!</a></div> <div class=collapse id=7c15bf8e-bad2-40e1-9320-5cbd6a834be1-data></div> <script>$(function() { renderData('#7c15bf8e-bad2-40e1-9320-5cbd6a834be1-data', {"$id":"1","ErrorCode":25009,"CustomErrorMessage":null}); });</script> </div> </div> </div> <div class="bs-callout bs-callout-warning"> <div class=panel-title><span>Flow termination with ResponseCode 25009</span></div> </div> </div> </div> </div> </div> <script src=scripts/plugins.19a1d77b.js></script> <script src=scripts/main.1a335d01.js></script> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> <script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    <![endif]--> <div class=container> <!------ BEGIN CUT -------> <div class=row> <div class=col-md-3 role=complementary> <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix"> <ul id=sidebar class="nav bs-docs-sidenav"> <li> <a href=#00f24f10-5d04-48d1-9520-e219b011ce16>Payment Request Validation</a> <ul class=nav> <li> <a href=#bf698148-fb41-4937-a056-91baee15d53a>MethodActionAllowedPolicy</a> </li> <li> <a href=#94eca506-5d68-4e24-b5b0-68862a33334c>PaymentFeeMismatchPolicy</a> </li> <li> <a href=#eb7e7bb3-ab3e-4939-8689-155c01742a33>PaymentMethodLimitPolicy</a> </li> <li> <a href=#8c36d75a-08b1-48fb-b6ab-55444b710f89>AvailableBalancePolicy</a> </li> </ul> </li> <li> <a href=#0240d10a-6b66-4df2-8670-d0c2bd829f8e>GetOrCreateCustomer</a> <ul class=nav> </ul> </li> <li> <a href=#aeccd2c9-5dfd-410f-8481-096866faeb81>Customer Validation</a> <ul class=nav> <li> <a href=#7fd62555-7ed3-4dfe-a035-29d049e999db>PaymentOptionGroupRequiredPolicy</a> </li> <li> <a href=#8f77db95-d35c-41de-87e8-0083512a5b41>HasNoPendingWithdrawalsPolicy</a> </li> </ul> </li> <li> <a href=#3a3db08f-c390-4042-9f3a-b48149a2d717>Customer Account Creation</a> <ul class=nav> <li> <a href=#625a28f4-dbd3-47f5-8975-f79f4fa8a29e>GetOrCreateAccount</a> <ul class=nav> </ul> </li> <li> <a href=#ed9534c4-3f01-4c09-89d4-a10f9c55bb93>GetOrCreateCustomerAccount</a> <ul class=nav> </ul> </li> </ul> </li> <li> <a href=#d8600259-03e0-4f17-b645-a95b44293dd4>Routing</a> <ul class=nav> <li> <a href=#05b4db80-9fb4-4044-b14e-5192b1f7f94e>GetPossibleProviderAccounts</a> <ul class=nav> </ul> </li> <li> <a href=#618452db-fa0e-4153-99c3-5140d69a8345>CheckProviderAccountLimits</a> </li> <li> <a href=#b14a2c75-8321-4676-bf1e-02ebf33d04de>RankProviderAccountsForWallet</a> <ul class=nav> </ul> </li> <li> <a href=#a9cc1912-8788-4b05-9e00-372ae22b6049>CheckProviderAccountConstraints</a> </li> <li> <a href=#c4367112-ea3a-47bd-82af-6dc5deb7075d>AtLeastOneProviderAccountAvailablePolicy</a> </li> <li> <a href=#b43d611a-b6b1-4c63-9daf-f2d60ff01d62>ChooseBestProviderAccount</a> <ul class=nav> </ul> </li> <li> <a href=#793a7dd5-fe65-4ee0-beb8-b95157269df9>CheckProviderAccountConfigEnabledPolicy</a> </li> </ul> </li> <li> <a href=#134e1975-a920-4762-bf34-8678fcb75bd8>CreatePayment</a> <ul class=nav> </ul> </li> <li> <a href=#dc59c358-154d-480b-be58-6253dc6c27d0>Check Account</a> <ul class=nav> <li> <a href=#d9689545-ca36-4669-9d1b-114010d10800>AccountBlockedPolicy</a> </li> <li> <a href=#8fd08e46-06f7-40d2-8022-3f3c9530036e>AccountBannedPolicy</a> </li> </ul> </li> <li> <a href=#d6e5fef7-6730-42be-8115-b64433f9365f>Check Customer Account</a> <ul class=nav> <li> <a href=#ef4bb012-a62b-47c0-a11e-ad38524d8561>CustomerAccountCountPolicy</a> </li> <li> <a href=#568ed882-7c6c-4fc3-a03f-7d6dcd295ddd>DecimalsPolicy</a> </li> </ul> </li> <li> <a href=#64424b7a-4026-4d44-8645-33db1ac281c5>Customer Account Locking</a> <ul class=nav> <li> <a href=#9e1ef8d2-0a21-4f00-839a-acb957124c15>CustomerAccountNotLockedToOthersPolicy</a> </li> <li> <a href=#38db053b-230a-4dc3-8775-98e9b1179e07>LockCustomerAccountIfNeeded</a> <ul class=nav> </ul> </li> </ul> </li> <li> <a href=#1af6f4d0-f73b-4e03-a930-46fb90874a8b>Withdrawal Post-Processing</a> <ul class=nav> <li> <a href=#0148f66f-09e0-49d1-b6d4-2bc13ef1e86d>WithdrawalAutoRejectPolicy</a> </li> <li> <a href=#9f6c8033-c3cc-49f6-a4cf-7d165068a9db>AssignWithdrawalChannel</a> <ul class=nav> </ul> </li> </ul> </li> </ul> </nav> </div> <div class=col-md-9 role=main> <div class="bs-callout bs-callout-info" id=1ccf022d-2b6a-4a05-9065-36873edca466> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#1ccf022d-2b6a-4a05-9065-36873edca466-data href=#1ccf022d-2b6a-4a05-9065-36873edca466-data>Registered WalletPaymentRequest</a></div> <div class="callout-body collapse" id=1ccf022d-2b6a-4a05-9065-36873edca466-data></div> <script>$(function() { renderData('#1ccf022d-2b6a-4a05-9065-36873edca466-data', {
+  "value": {
+    "AccountIdentifier": "+79260366832",
+    "DestinationCurrencyCode": "RUB",
+    "PaymentRequestId": 10175,
+    "PaymentReference": "2505766c-248e-4494-8a79-91bb0d9ac6de",
+    "SiteName": "bets10.com",
+    "PaymentMethod": {
+      "Id": 118,
+      "Name": "QIWI",
+      "NoOfAccountLimit": 1,
+      "IsWalletAccountNamedInternally": false
+    },
+    "MethodAction": 2,
+    "IsDeposit": false,
+    "IsWithdrawal": true,
+    "CustomerInformation": {
+      "UserGuid": "00000000-0000-0000-0000-000000000000",
+      "CustomerReference": "0",
+      "LoginName": "fake.test.user@systemtests.com",
+      "AdditionalInfo": null,
+      "FirstName": "FakeFirstName",
+      "LastName": "FakeLastName",
+      "BirthDate": "1966-06-06T00:00:00",
+      "Address": "Fake Adress, 123",
+      "ZipCode": "FakeZip",
+      "City": "FakeCity",
+      "CountryCode": "TR",
+      "LanguageCode": "en",
+      "PhoneNumber": "123456789",
+      "Email": "fake.test.user@systemtests.com",
+      "AccountCurrency": "EUR",
+      "DepositLimits": [
+        {
+          "StartDate": "2015-07-16T13:49:52.8126354Z",
+          "Amount": 2000.0,
+          "LimitType": 0
+        },
+        {
+          "StartDate": "2015-07-10T13:49:52.8126354Z",
+          "Amount": 2500.0,
+          "LimitType": 0
+        },
+        {
+          "StartDate": "2015-06-17T13:49:52.8126354Z",
+          "Amount": 5000.0,
+          "LimitType": 0
+        }
+      ],
+      "DepositAllowed": true,
+      "WithdrawalAllowed": true,
+      "Created": "2006-06-06T00:00:00",
+      "CustomerSegments": [],
+      "VipType": "Unknown"
+    },
+    "LoginInformation": {
+      "IpAddress": "127.0.0.1",
+      "IsMobile": false
+    },
+    "PaymentBill": {
+      "Amount": 100.0,
+      "Fee": 0.0,
+      "Currency": "RUB"
+    },
+    "BaseBill": {
+      "Amount": 50.0,
+      "Fee": 0.0,
+      "Currency": "EUR"
+    },
+    "UserBill": {
+      "Amount": 50.0,
+      "Fee": 0.0,
+      "Currency": "EUR"
+    },
+    "FeeRequestedFromWeb": null
+  },
+  "type": "Paas.BusinessLogic.ValidationFlow.Contracts.WalletPaymentRequest"
+}); });</script> </div> <div class="bs-callout bs-callout-info" id=8028087d-16c5-491a-8d98-081b3e802010> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#8028087d-16c5-491a-8d98-081b3e802010-data href=#8028087d-16c5-491a-8d98-081b3e802010-data>Registered PaymentRequest</a></div> <div class="callout-body collapse" id=8028087d-16c5-491a-8d98-081b3e802010-data></div> <script>$(function() { renderData('#8028087d-16c5-491a-8d98-081b3e802010-data', {
+  "value": {
+    "AccountIdentifier": "+79260366832",
+    "DestinationCurrencyCode": "RUB",
+    "PaymentRequestId": 10175,
+    "PaymentReference": "2505766c-248e-4494-8a79-91bb0d9ac6de",
+    "SiteName": "bets10.com",
+    "PaymentMethod": {
+      "Id": 118,
+      "Name": "QIWI",
+      "NoOfAccountLimit": 1,
+      "IsWalletAccountNamedInternally": false
+    },
+    "MethodAction": 2,
+    "IsDeposit": false,
+    "IsWithdrawal": true,
+    "CustomerInformation": {
+      "UserGuid": "00000000-0000-0000-0000-000000000000",
+      "CustomerReference": "0",
+      "LoginName": "fake.test.user@systemtests.com",
+      "AdditionalInfo": null,
+      "FirstName": "FakeFirstName",
+      "LastName": "FakeLastName",
+      "BirthDate": "1966-06-06T00:00:00",
+      "Address": "Fake Adress, 123",
+      "ZipCode": "FakeZip",
+      "City": "FakeCity",
+      "CountryCode": "TR",
+      "LanguageCode": "en",
+      "PhoneNumber": "123456789",
+      "Email": "fake.test.user@systemtests.com",
+      "AccountCurrency": "EUR",
+      "DepositLimits": [
+        {
+          "StartDate": "2015-07-16T13:49:52.8126354Z",
+          "Amount": 2000.0,
+          "LimitType": 0
+        },
+        {
+          "StartDate": "2015-07-10T13:49:52.8126354Z",
+          "Amount": 2500.0,
+          "LimitType": 0
+        },
+        {
+          "StartDate": "2015-06-17T13:49:52.8126354Z",
+          "Amount": 5000.0,
+          "LimitType": 0
+        }
+      ],
+      "DepositAllowed": true,
+      "WithdrawalAllowed": true,
+      "Created": "2006-06-06T00:00:00",
+      "CustomerSegments": [],
+      "VipType": "Unknown"
+    },
+    "LoginInformation": {
+      "IpAddress": "127.0.0.1",
+      "IsMobile": false
+    },
+    "PaymentBill": {
+      "Amount": 100.0,
+      "Fee": 0.0,
+      "Currency": "RUB"
+    },
+    "BaseBill": {
+      "Amount": 50.0,
+      "Fee": 0.0,
+      "Currency": "EUR"
+    },
+    "UserBill": {
+      "Amount": 50.0,
+      "Fee": 0.0,
+      "Currency": "EUR"
+    },
+    "FeeRequestedFromWeb": null
+  },
+  "type": "Paas.BusinessLogic.ValidationFlow.Contracts.WalletPaymentRequest"
+}); });</script> </div> <div class="bs-callout bs-callout-success" id=00f24f10-5d04-48d1-9520-e219b011ce16> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#00f24f10-5d04-48d1-9520-e219b011ce16-inner href=#00f24f10-5d04-48d1-9520-e219b011ce16-inner>Payment Request Validation</a></div> <div class="callout-body collapse" id=00f24f10-5d04-48d1-9520-e219b011ce16-inner> <div class="bs-callout bs-callout-success" id=bf698148-fb41-4937-a056-91baee15d53a> <div class=callout-title><span>MethodActionAllowedPolicy</span></div> </div> <div class="bs-callout bs-callout-success" id=94eca506-5d68-4e24-b5b0-68862a33334c> <div class=callout-title><span>PaymentFeeMismatchPolicy</span></div> </div> <div class="bs-callout bs-callout-success" id=eb7e7bb3-ab3e-4939-8689-155c01742a33> <div class=callout-title><span>PaymentMethodLimitPolicy</span></div> </div> <div class="bs-callout bs-callout-success" id=8c36d75a-08b1-48fb-b6ab-55444b710f89> <div class=callout-title><span>AvailableBalancePolicy</span></div> </div> </div> </div> <div class="bs-callout bs-callout-success" id=0240d10a-6b66-4df2-8670-d0c2bd829f8e> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#0240d10a-6b66-4df2-8670-d0c2bd829f8e-inner href=#0240d10a-6b66-4df2-8670-d0c2bd829f8e-inner>GetOrCreateCustomer</a></div> <div class="callout-body collapse" id=0240d10a-6b66-4df2-8670-d0c2bd829f8e-inner> <div class="bs-callout bs-callout-info" id=390c7fbf-0a02-47da-93b0-b770c55e9565> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#390c7fbf-0a02-47da-93b0-b770c55e9565-data href=#390c7fbf-0a02-47da-93b0-b770c55e9565-data>Registered Customer</a></div> <div class="callout-body collapse" id=390c7fbf-0a02-47da-93b0-b770c55e9565-data></div> <script>$(function() { renderData('#390c7fbf-0a02-47da-93b0-b770c55e9565-data', {
+  "value": {
+    "Id": 1137,
+    "CustomerReference": "0",
+    "LoginName": "fake.test.user@systemtests.com",
+    "Tags": []
+  },
+  "type": "Paas.BusinessLogic.ValidationFlow.Entities.Customer"
+}); });</script> </div> </div> </div> <div class="bs-callout bs-callout-success" id=aeccd2c9-5dfd-410f-8481-096866faeb81> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#aeccd2c9-5dfd-410f-8481-096866faeb81-inner href=#aeccd2c9-5dfd-410f-8481-096866faeb81-inner>Customer Validation</a></div> <div class="callout-body collapse" id=aeccd2c9-5dfd-410f-8481-096866faeb81-inner> <div class="bs-callout bs-callout-success" id=7fd62555-7ed3-4dfe-a035-29d049e999db> <div class=callout-title><span>PaymentOptionGroupRequiredPolicy</span></div> </div> <div class="bs-callout bs-callout-success" id=8f77db95-d35c-41de-87e8-0083512a5b41> <div class=callout-title><span>HasNoPendingWithdrawalsPolicy</span></div> </div> </div> </div> <div class="bs-callout bs-callout-success" id=3a3db08f-c390-4042-9f3a-b48149a2d717> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#3a3db08f-c390-4042-9f3a-b48149a2d717-inner href=#3a3db08f-c390-4042-9f3a-b48149a2d717-inner>Customer Account Creation</a></div> <div class="callout-body collapse" id=3a3db08f-c390-4042-9f3a-b48149a2d717-inner> <div class="bs-callout bs-callout-success" id=625a28f4-dbd3-47f5-8975-f79f4fa8a29e> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#625a28f4-dbd3-47f5-8975-f79f4fa8a29e-inner href=#625a28f4-dbd3-47f5-8975-f79f4fa8a29e-inner>GetOrCreateAccount</a></div> <div class="callout-body collapse" id=625a28f4-dbd3-47f5-8975-f79f4fa8a29e-inner> <div class="bs-callout bs-callout-info" id=d4009186-068a-4f43-bc8a-59e73ae470d9> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#d4009186-068a-4f43-bc8a-59e73ae470d9-data href=#d4009186-068a-4f43-bc8a-59e73ae470d9-data>Registered Account</a></div> <div class="callout-body collapse" id=d4009186-068a-4f43-bc8a-59e73ae470d9-data></div> <script>$(function() { renderData('#d4009186-068a-4f43-bc8a-59e73ae470d9-data', {
+  "value": {
+    "Id": 1089,
+    "IsBanned": false,
+    "IsBlocked": false,
+    "IsNew": false
+  },
+  "type": "Paas.BusinessLogic.ValidationFlow.Entities.Account"
+}); });</script> </div> </div> </div> <div class="bs-callout bs-callout-success" id=ed9534c4-3f01-4c09-89d4-a10f9c55bb93> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#ed9534c4-3f01-4c09-89d4-a10f9c55bb93-inner href=#ed9534c4-3f01-4c09-89d4-a10f9c55bb93-inner>GetOrCreateCustomerAccount</a></div> <div class="callout-body collapse" id=ed9534c4-3f01-4c09-89d4-a10f9c55bb93-inner> <div class="bs-callout bs-callout-info" id=34a40c04-6c05-4fa0-bc81-e2fef2e1b721> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#34a40c04-6c05-4fa0-bc81-e2fef2e1b721-data href=#34a40c04-6c05-4fa0-bc81-e2fef2e1b721-data>Registered CustomerAccount</a></div> <div class="callout-body collapse" id=34a40c04-6c05-4fa0-bc81-e2fef2e1b721-data></div> <script>$(function() { renderData('#34a40c04-6c05-4fa0-bc81-e2fef2e1b721-data', {
+  "value": {
+    "CustomerAccountId": 1101,
+    "Account": {
+      "Id": 1089,
+      "IsBanned": false,
+      "IsBlocked": false,
+      "IsNew": false
+    },
+    "Customer": {
+      "Id": 1137,
+      "CustomerReference": "0",
+      "LoginName": "fake.test.user@systemtests.com",
+      "Tags": []
+    },
+    "IsLocked": true,
+    "IsNew": false
+  },
+  "type": "Paas.BusinessLogic.ValidationFlow.Entities.CustomerAccount"
+}); });</script> </div> </div> </div> </div> </div> <div class="bs-callout bs-callout-success" id=d8600259-03e0-4f17-b645-a95b44293dd4> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#d8600259-03e0-4f17-b645-a95b44293dd4-inner href=#d8600259-03e0-4f17-b645-a95b44293dd4-inner>Routing</a></div> <div class="callout-body collapse" id=d8600259-03e0-4f17-b645-a95b44293dd4-inner> <div class="bs-callout bs-callout-success" id=05b4db80-9fb4-4044-b14e-5192b1f7f94e> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#05b4db80-9fb4-4044-b14e-5192b1f7f94e-inner href=#05b4db80-9fb4-4044-b14e-5192b1f7f94e-inner>GetPossibleProviderAccounts</a></div> <div class="callout-body collapse" id=05b4db80-9fb4-4044-b14e-5192b1f7f94e-inner> <div class="bs-callout bs-callout-info" id=069a28d0-3487-4a66-8f7e-6ae817121737> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#069a28d0-3487-4a66-8f7e-6ae817121737-data href=#069a28d0-3487-4a66-8f7e-6ae817121737-data>Registered PossibleProviderAccounts</a></div> <div class="callout-body collapse" id=069a28d0-3487-4a66-8f7e-6ae817121737-data></div> <script>$(function() { renderData('#069a28d0-3487-4a66-8f7e-6ae817121737-data', {
+  "value": {
+    "ProviderAccounts": [
+      {
+        "ProviderAccount": {
+          "Id": 9509,
+          "Name": "Qiwi"
+        },
+        "ProviderLimit": {
+          "MinLimit": 1.0000,
+          "MaxLimit": 15000.0000,
+          "Currency": "RUB"
+        },
+        "ProviderAccountConfig": {
+          "Id": 12558,
+          "IsEnabled": true
+        },
+        "ProviderBill": {
+          "Amount": 100.0,
+          "Fee": 0.0,
+          "Currency": "RUB"
+        }
+      }
+    ]
+  },
+  "type": "Paas.BusinessLogic.ValidationFlow.Entities.PossibleProviderAccounts"
+}); });</script> </div> </div> </div> <div class="bs-callout bs-callout-success" id=618452db-fa0e-4153-99c3-5140d69a8345> <div class=callout-title><span>CheckProviderAccountLimits</span></div> </div> <div class="bs-callout bs-callout-success" id=b14a2c75-8321-4676-bf1e-02ebf33d04de> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#b14a2c75-8321-4676-bf1e-02ebf33d04de-inner href=#b14a2c75-8321-4676-bf1e-02ebf33d04de-inner>RankProviderAccountsForWallet</a></div> <div class="callout-body collapse" id=b14a2c75-8321-4676-bf1e-02ebf33d04de-inner> <div class="bs-callout bs-callout-info" id=2306f111-2877-40f9-8875-27602f7ecd7c> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#2306f111-2877-40f9-8875-27602f7ecd7c-data href=#2306f111-2877-40f9-8875-27602f7ecd7c-data>Registered RankedProviderAccounts</a></div> <div class="callout-body collapse" id=2306f111-2877-40f9-8875-27602f7ecd7c-data></div> <script>$(function() { renderData('#2306f111-2877-40f9-8875-27602f7ecd7c-data', {
+  "value": {
+    "ProviderAccounts": [
+      {
+        "ProviderAccount": {
+          "Id": 9509,
+          "Name": "Qiwi"
+        },
+        "ProviderLimit": {
+          "MinLimit": 1.0000,
+          "MaxLimit": 15000.0000,
+          "Currency": "RUB"
+        },
+        "ProviderAccountConfig": {
+          "Id": 12558,
+          "IsEnabled": true
+        },
+        "ProviderBill": {
+          "Amount": 100.0,
+          "Fee": 0.0,
+          "Currency": "RUB"
+        }
+      }
+    ]
+  },
+  "type": "Paas.BusinessLogic.ValidationFlow.Entities.RankedProviderAccounts"
+}); });</script> </div> </div> </div> <div class="bs-callout bs-callout-success" id=a9cc1912-8788-4b05-9e00-372ae22b6049> <div class=callout-title><span>CheckProviderAccountConstraints</span></div> </div> <div class="bs-callout bs-callout-success" id=c4367112-ea3a-47bd-82af-6dc5deb7075d> <div class=callout-title><span>AtLeastOneProviderAccountAvailablePolicy</span></div> </div> <div class="bs-callout bs-callout-success" id=b43d611a-b6b1-4c63-9daf-f2d60ff01d62> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#b43d611a-b6b1-4c63-9daf-f2d60ff01d62-inner href=#b43d611a-b6b1-4c63-9daf-f2d60ff01d62-inner>ChooseBestProviderAccount</a></div> <div class="callout-body collapse" id=b43d611a-b6b1-4c63-9daf-f2d60ff01d62-inner> <div class="bs-callout bs-callout-info" id=76b423e2-443e-4678-820c-cb5e48e5e2d4> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#76b423e2-443e-4678-820c-cb5e48e5e2d4-data href=#76b423e2-443e-4678-820c-cb5e48e5e2d4-data>Registered ProviderAccountDetails</a></div> <div class="callout-body collapse" id=76b423e2-443e-4678-820c-cb5e48e5e2d4-data></div> <script>$(function() { renderData('#76b423e2-443e-4678-820c-cb5e48e5e2d4-data', {
+  "value": {
+    "ProviderAccount": {
+      "Id": 9509,
+      "Name": "Qiwi"
+    },
+    "ProviderLimit": {
+      "MinLimit": 1.0000,
+      "MaxLimit": 15000.0000,
+      "Currency": "RUB"
+    },
+    "ProviderAccountConfig": {
+      "Id": 12558,
+      "IsEnabled": true
+    },
+    "ProviderBill": {
+      "Amount": 100.0,
+      "Fee": 0.0,
+      "Currency": "RUB"
+    }
+  },
+  "type": "Paas.BusinessLogic.ValidationFlow.Entities.ProviderAccountDetails"
+}); });</script> </div> </div> </div> <div class="bs-callout bs-callout-success" id=793a7dd5-fe65-4ee0-beb8-b95157269df9> <div class=callout-title><span>CheckProviderAccountConfigEnabledPolicy</span></div> </div> </div> </div> <div class="bs-callout bs-callout-success" id=134e1975-a920-4762-bf34-8678fcb75bd8> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#134e1975-a920-4762-bf34-8678fcb75bd8-inner href=#134e1975-a920-4762-bf34-8678fcb75bd8-inner>CreatePayment</a></div> <div class="callout-body collapse" id=134e1975-a920-4762-bf34-8678fcb75bd8-inner> <div class="bs-callout bs-callout-info" id=9004cdd1-3f24-441c-8ce5-05b50e3448f9> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#9004cdd1-3f24-441c-8ce5-05b50e3448f9-data href=#9004cdd1-3f24-441c-8ce5-05b50e3448f9-data>Registered Payment</a></div> <div class="callout-body collapse" id=9004cdd1-3f24-441c-8ce5-05b50e3448f9-data></div> <script>$(function() { renderData('#9004cdd1-3f24-441c-8ce5-05b50e3448f9-data', {
+  "value": {
+    "Id": 10122,
+    "PublicPaymentId": "4976962212"
+  },
+  "type": "Paas.BusinessLogic.ValidationFlow.Entities.Payment"
+}); });</script> </div> </div> </div> <div class="bs-callout bs-callout-success" id=dc59c358-154d-480b-be58-6253dc6c27d0> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#dc59c358-154d-480b-be58-6253dc6c27d0-inner href=#dc59c358-154d-480b-be58-6253dc6c27d0-inner>Check Account</a></div> <div class="callout-body collapse" id=dc59c358-154d-480b-be58-6253dc6c27d0-inner> <div class="bs-callout bs-callout-success" id=d9689545-ca36-4669-9d1b-114010d10800> <div class=callout-title><span>AccountBlockedPolicy</span></div> </div> <div class="bs-callout bs-callout-success" id=8fd08e46-06f7-40d2-8022-3f3c9530036e> <div class=callout-title><span>AccountBannedPolicy</span></div> </div> </div> </div> <div class="bs-callout bs-callout-success" id=d6e5fef7-6730-42be-8115-b64433f9365f> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#d6e5fef7-6730-42be-8115-b64433f9365f-inner href=#d6e5fef7-6730-42be-8115-b64433f9365f-inner>Check Customer Account</a></div> <div class="callout-body collapse" id=d6e5fef7-6730-42be-8115-b64433f9365f-inner> <div class="bs-callout bs-callout-success" id=ef4bb012-a62b-47c0-a11e-ad38524d8561> <div class=callout-title><span>CustomerAccountCountPolicy</span></div> </div> <div class="bs-callout bs-callout-success" id=568ed882-7c6c-4fc3-a03f-7d6dcd295ddd> <div class=callout-title><span>DecimalsPolicy</span></div> </div> </div> </div> <div class="bs-callout bs-callout-success" id=64424b7a-4026-4d44-8645-33db1ac281c5> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#64424b7a-4026-4d44-8645-33db1ac281c5-inner href=#64424b7a-4026-4d44-8645-33db1ac281c5-inner>Customer Account Locking</a></div> <div class="callout-body collapse" id=64424b7a-4026-4d44-8645-33db1ac281c5-inner> <div class="bs-callout bs-callout-success" id=9e1ef8d2-0a21-4f00-839a-acb957124c15> <div class=callout-title><span>CustomerAccountNotLockedToOthersPolicy</span></div> </div> <div class="bs-callout bs-callout-success" id=38db053b-230a-4dc3-8775-98e9b1179e07> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#38db053b-230a-4dc3-8775-98e9b1179e07-inner href=#38db053b-230a-4dc3-8775-98e9b1179e07-inner>LockCustomerAccountIfNeeded</a></div> <div class="callout-body collapse" id=38db053b-230a-4dc3-8775-98e9b1179e07-inner> <div class="bs-callout bs-callout-info" id=30a5d062-b062-4aef-8da2-93f9c19fa95e> <div class=callout-title><span>Customer Account is already locked</span></div> </div> </div> </div> </div> </div> <div class="bs-callout bs-callout-success" id=1af6f4d0-f73b-4e03-a930-46fb90874a8b> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#1af6f4d0-f73b-4e03-a930-46fb90874a8b-inner href=#1af6f4d0-f73b-4e03-a930-46fb90874a8b-inner>Withdrawal Post-Processing</a></div> <div class="callout-body collapse" id=1af6f4d0-f73b-4e03-a930-46fb90874a8b-inner> <div class="bs-callout bs-callout-success" id=0148f66f-09e0-49d1-b6d4-2bc13ef1e86d> <div class=callout-title><span>WithdrawalAutoRejectPolicy</span></div> </div> <div class="bs-callout bs-callout-success" id=9f6c8033-c3cc-49f6-a4cf-7d165068a9db> <div class=callout-title><a class=collapsed data-toggle=collapse data-target=#9f6c8033-c3cc-49f6-a4cf-7d165068a9db-inner href=#9f6c8033-c3cc-49f6-a4cf-7d165068a9db-inner>AssignWithdrawalChannel</a></div> <div class="callout-body collapse" id=9f6c8033-c3cc-49f6-a4cf-7d165068a9db-inner> <div class="bs-callout bs-callout-info" id=fb40b874-62e9-4714-a52f-12d0b0040c5e> <div class=callout-title><span>Withdrawal sent to WCP processing</span></div> </div> </div> </div> </div> </div> </div> </div> <!-------- END CUT --------> </div> <script src=scripts/plugins.19a1d77b.js></script> <script src=scripts/main.1a335d01.js></script> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> <script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='https://www.google-analytics.com/analytics.js';
