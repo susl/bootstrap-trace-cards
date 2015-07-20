@@ -19,17 +19,19 @@ body {
 }
 
 
-// custom styles below
+// validation trace styles below
+
+.validation-trace {
 
 /* sidebar */
-.bs-docs-sidebar {
+.sidebar {
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 /* all links */
-.bs-docs-sidebar .nav>li>a {
+.sidebar .nav>li>a {
     color: #999;
     border-left: 2px solid transparent;
     padding: 4px 20px;
@@ -38,7 +40,7 @@ body {
 }
 
 /* nested links */
-.bs-docs-sidebar .nav .nav>li>a {
+.sidebar .nav .nav>li>a {
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 30px;
@@ -46,36 +48,39 @@ body {
 }
 
 /* active & hover links */
-.bs-docs-sidebar .nav>.active>a, 
-.bs-docs-sidebar .nav>li>a:hover, 
-.bs-docs-sidebar .nav>li>a:focus {
+.sidebar .nav>.active>a, 
+.sidebar .nav>li>a:hover, 
+.sidebar .nav>li>a:focus {
     color: #563d7c;                 
     text-decoration: none;          
     background-color: transparent;  
     border-left-color: #563d7c; 
 }
 /* all active links */
-.bs-docs-sidebar .nav>.active>a, 
-.bs-docs-sidebar .nav>.active:hover>a,
-.bs-docs-sidebar .nav>.active:focus>a {
+.sidebar .nav>.active>a, 
+.sidebar .nav>.active:hover>a,
+.sidebar .nav>.active:focus>a {
     font-weight: 700;
 }
 /* nested active links */
-.bs-docs-sidebar .nav .nav>.active>a, 
-.bs-docs-sidebar .nav .nav>.active:hover>a,
-.bs-docs-sidebar .nav .nav>.active:focus>a {
+.sidebar .nav .nav>.active>a, 
+.sidebar .nav .nav>.active:hover>a,
+.sidebar .nav .nav>.active:focus>a {
     font-weight: 500;
 }
 
 /* hide inactive nested list */
-.bs-docs-sidebar .nav ul.nav {
-//    display: none;           
+.sidebar .nav ul.nav {
     display: block;
 }
 /* show active nested list */
-.bs-docs-sidebar .nav>.active>ul.nav {
+.sidebar .nav>.active>ul.nav {
     display: block;           
 }
+
+
+
+/* callout */
 
 $callout-default-color: #777;
 $callout-success-color: #5cb85c;
@@ -83,34 +88,33 @@ $callout-danger-color: #d9534f;
 $callout-warning-color: #f0ad4e;
 $callout-info-color: #5bc0de;
 
-.bs-callout {
+.callout {
     padding: 7px 10px 7px 10px;
     margin-bottom: 7px;
     border: 1px solid #eee;
     border-left-width: 3px;
     border-radius: 3px;
-//    box-shadow: 1px 1px 2px #aaa;
 }
-.bs-callout-default {
+.callout-default {
     border-left-color: $callout-default-color;
 }
-.bs-callout-success {
+.callout-success {
     border-left-color: $callout-success-color;
 }
-.bs-callout-danger {
+.callout-danger {
     border-left-color: $callout-danger-color;
 }
-.bs-callout-warning {
+.callout-warning {
     border-left-color: $callout-warning-color;
 }
-.bs-callout-info {
+.callout-info {
     border-left-color: $callout-info-color;
 }
 
-.bs-callout p:last-child {
+.callout p:last-child {
     margin-bottom: 0px;
 }
-.bs-callout+.bs-callout {
+.callout+.callout {
     margin-top: -5px;
 }
 
@@ -121,11 +125,11 @@ $callout-info-color: #5bc0de;
     margin-bottom: 0;
 }
 
-.bs-callout>.callout-title {
+.callout>.callout-title {
     color: $callout-default-color;
 }
 
-.bs-callout.bs-callout-info>.callout-title {
+.callout.callout-info>.callout-title {
     :before {
         color: $callout-info-color;
         @include fa-icon();
@@ -134,7 +138,7 @@ $callout-info-color: #5bc0de;
     }
 }
 
-.bs-callout.bs-callout-warning>.callout-title {
+.callout.callout-warning>.callout-title {
     font-weight: bold;
     :before {
         color: $callout-warning-color;
@@ -144,7 +148,7 @@ $callout-info-color: #5bc0de;
     }
 }
 
-.bs-callout.bs-callout-danger>.callout-title {
+.callout.callout-danger>.callout-title {
     font-weight: bold;
     :before {
         color: $callout-danger-color;
@@ -154,7 +158,7 @@ $callout-info-color: #5bc0de;
     }
 }
 
-.bs-callout.bs-callout-success>.callout-title {
+.callout.callout-success>.callout-title {
     :before {
         color: $callout-success-color;
         @include fa-icon();
@@ -163,7 +167,7 @@ $callout-info-color: #5bc0de;
     }
 }
 
-.bs-callout>.callout-title>a {
+.callout>.callout-title>a {
     display: block;
     &:after {
         @include fa-icon();
@@ -173,4 +177,6 @@ $callout-info-color: #5bc0de;
     &.collapsed:after {
         content: $fa-var-caret-right;
     }
+}
+
 }
