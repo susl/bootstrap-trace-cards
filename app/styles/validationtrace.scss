@@ -164,4 +164,20 @@ $callout-info-color: #5bc0de;
     }
 }
 
+// data widgets
+
+a.jsondata {
+    &:before {
+        @include fa-icon();
+        content: $fa-var-code;
+        line-height: inherit;
+        margin-right: 4px;
+    }
+}
+
+span.errorcode, span.errormsg {
+    font-weight: bold;
+    color: red;
+}
+
 }
