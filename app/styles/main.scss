@@ -103,7 +103,9 @@ $callout-info-color: #5bc0de;
     border-left-color: $callout-success-color;
 }
 .callout-danger {
+    border-color: rgba($callout-danger-color, 0.5);
     border-left-color: $callout-danger-color;
+    box-shadow: 1px 1px 3px rgba($callout-danger-color, 0.4);
 }
 .callout-warning {
     border-left-color: $callout-warning-color;
