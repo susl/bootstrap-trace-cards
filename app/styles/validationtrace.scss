@@ -126,53 +126,69 @@ $callout-info-color: #5bc0de;
 }
 
 .callout.callout-info>.callout-title {
-    :before {
+    &>:before {
         color: $callout-info-color;
         @include fa-icon();
         content: $fa-var-info;
         margin-right: 5px;
+        line-height: inherit;
     }
 }
 
 .callout.callout-warning>.callout-title {
     font-weight: bold;
-    :before {
+    &>:before {
         color: $callout-warning-color;
         @include fa-icon();
         content: $fa-var-flag;
         margin-right: 4px;
+        line-height: inherit;
     }
 }
 
 .callout.callout-danger>.callout-title {
     font-weight: bold;
-    :before {
+    &>:before {
         color: $callout-danger-color;
         @include fa-icon();
         content: $fa-var-exclamation;
         margin-right: 5px;
+        line-height: inherit;
     }
 }
 
 .callout.callout-success>.callout-title {
-    :before {
+    &>:before {
         color: $callout-success-color;
         @include fa-icon();
         content: $fa-var-check;
         margin-right: 3px;
+        line-height: inherit;
     }
 }
 
-.callout>.callout-title>a {
-    display: block;
-    &:after {
-        @include fa-icon();
-        float: right;
-        content: $fa-var-caret-down;
-        line-height: inherit;
+.callout>.callout-title {
+    &>a {
+        &>span:last-child:after {
+            @include fa-icon();
+            float: right;
+            content: $fa-var-caret-down;
+            line-height: inherit;
+            margin-left: 5px;
+        }
+        &.collapsed>span:last-child:after {
+            content: $fa-var-caret-right;
+        }
     }
-    &.collapsed:after {
-        content: $fa-var-caret-right;
+
+    &>* {
+        display: block;
+        &>span:last-child {
+            float: right;
+            font-size: smaller;
+            color: #999;
+            font-weight: normal;
+        }
     }
 }
 
