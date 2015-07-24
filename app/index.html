@@ -14,6 +14,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/jquery.json-view/dist/jquery.json-view.css" />
     <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/bower_components/bootstrap/docs/assets/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -24,7 +25,7 @@
     <!-- endbuild -->
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery/jquery.js"></script>
     <script src="/bower_components/jquery.json-view/dist/jquery.json-view.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
@@ -50,11 +51,12 @@
 
 
 <!------ BEGIN CUT ------->
+    <link rel="stylesheet" href="/bower_components/bootstrap/docs/assets/css/bootstrap-responsive.css" />
 
-<div class="validation-trace row">
+<div class="validation-trace row-fluid">
 
-    <div class="col-md-3" role="complementary">
-        <nav class="sidebar hidden-print hidden-xs hidden-sm affix">
+    <div class="span3" role="complementary">
+        <nav class="sidebar hidden-print hidden-phone hidden-tablet affix">
             <ul id="sidebar" class="nav">
                         <li>
             <a data-target-id="#375e7f45-9816-42d3-b7aa-9fe6baf33a14-inner" href="#375e7f45-9816-42d3-b7aa-9fe6baf33a14">Payment Request Validation</a>
@@ -104,7 +106,7 @@
             </ul>
         </nav>
     </div>
-    <div class="col-md-9" role="main">
+    <div class="span9" role="main">
 <div class="callout callout-info" id="952a1ee5-8cc9-41a5-8910-2a32269c807c">
         <div class="callout-title"><a class="collapsed" data-toggle="collapse" data-target="#952a1ee5-8cc9-41a5-8910-2a32269c807c-data" href="#952a1ee5-8cc9-41a5-8910-2a32269c807c-data">Registered WalletPaymentRequest</a></div>
         <div class="callout-body callout-data collapse" id="952a1ee5-8cc9-41a5-8910-2a32269c807c-data"></div>
@@ -297,10 +299,10 @@
 </div>
 <div class="callout callout-success" id="5093196c-5e80-4977-a78c-6e102a96e2dc">
             <div class="callout-title"><a class="collapsed" data-toggle="collapse" data-target="#5093196c-5e80-4977-a78c-6e102a96e2dc-inner" href="#5093196c-5e80-4977-a78c-6e102a96e2dc-inner">GetOrCreateCustomer</a></div>
-            <div class="callout-body callout-scope collapse.in" id="5093196c-5e80-4977-a78c-6e102a96e2dc-inner">
+            <div class="callout-body callout-scope collapse in" id="5093196c-5e80-4977-a78c-6e102a96e2dc-inner">
 <div class="callout callout-info" id="a3c0d540-957f-4539-9822-eeae1a079ce7">
         <div class="callout-title"><a class="collapsed" data-toggle="collapse" data-target="#a3c0d540-957f-4539-9822-eeae1a079ce7-data" href="#a3c0d540-957f-4539-9822-eeae1a079ce7-data">Registered Customer</a></div>
-        <div class="callout-body callout-data collapse.in" id="a3c0d540-957f-4539-9822-eeae1a079ce7-data"></div>
+        <div class="callout-body callout-data collapse in" id="a3c0d540-957f-4539-9822-eeae1a079ce7-data"></div>
         <script>
             $(function() { renderData('a3c0d540-957f-4539-9822-eeae1a079ce7', {
   "value": {
@@ -371,18 +373,8 @@
 
 
     <!-- build:js(.) scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="/bower_components/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/bower_components/bootstrap/js/bootstrap-scrollspy.js"></script>
     <!-- endbuild -->
 
 

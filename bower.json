@@ -2,10 +2,11 @@
   "name": "bootstrap-trace-cards",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.3",
     "jquery.json-view": "*",
-    "components-font-awesome": "~4.3.0"
+    "components-font-awesome": "~4.3.0",
+    "jquery": "1.9.1",
+    "bootstrap": "2.3.2"
   },
   "overrides": {
     "bootstrap-sass": {
